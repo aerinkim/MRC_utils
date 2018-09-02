@@ -1,3 +1,4 @@
+
 import re
 import os
 import sys
@@ -100,6 +101,7 @@ with open("glove.840B.300d.updated.txt", mode="w" , encoding="utf8") as outfile:
 				print (e)
 				pass
 
+		emb =  np.round(emb,6)
 		for i in range(0,len(glove_token_sequence)):
 			token = glove_token_sequence[i]
 			dim_300 = ' '.join(str(j) for j in emb[i]) 
