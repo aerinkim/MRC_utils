@@ -236,7 +236,7 @@ if __name__ == '__main__':
 	#batches = list(batches)
 
 
-	model_path = model_root+'v2_FGSM_max10_original_200_25.pt'
+	model_path = model_root+'best_checkpoint.pt'
 
 	checkpoint = torch.load(model_path)
 
